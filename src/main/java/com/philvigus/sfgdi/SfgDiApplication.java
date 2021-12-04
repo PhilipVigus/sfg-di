@@ -20,11 +20,9 @@ public class SfgDiApplication {
          *
          * The framework is effectively managing the construction of the controller
          */
+        System.out.println("---------------- Primary");
         MyController myController = (MyController) ctx.getBean("myController");
-
-        String greeting = myController.sayHello();
-
-        System.out.println(greeting);
+        System.out.println(myController.sayHello());
 
         /**
          * The following Spring-managed DI examples reply on the appropriate annotations

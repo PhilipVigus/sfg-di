@@ -8,7 +8,7 @@ import org.springframework.stereotype.Controller;
 public class ConstructorInjectedController {
     private final GreetingService greetingService;
 
-    // Note that @Autowired is optional on constructor-based DI
+    // Note that @Autowired is optional with constructor-based DI
     public ConstructorInjectedController(@Qualifier("constructorGreetingService") GreetingService greetingService) {
         this.greetingService = greetingService;
     }
